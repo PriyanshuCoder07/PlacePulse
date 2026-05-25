@@ -2,31 +2,12 @@
 .env
 .env.local
 .env.*.local
-.env*.json
 
 # Dependencies
 node_modules/
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-
-# Build outputs
-dist/
-build/
-out/
-dist-ssr/
-*.local
-
-# IDE
-.vscode/
-!.vscode/extensions.json
-.idea/
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
 # Logs
 logs
@@ -38,15 +19,26 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # OS
-Thumbs.db
 .DS_Store
+Thumbs.db
 
-# Firebase service account keys (IMPORTANT!)
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Firebase & Secrets
 serviceAccount.json
 serviceAccount.json.json
 *-serviceAccount.json
 firebase-key.json
-
-# Sensitive files
 *.key
 *.pem
+
+# Build outputs
+dist/
+build/
